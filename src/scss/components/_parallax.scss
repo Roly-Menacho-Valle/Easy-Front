@@ -1,0 +1,69 @@
+@mixin parallax ($sz,$ff,$fz,$fw,$tt,$ct,$csm,$ffp,$fzp,$fwp,$cp){
+    background: no-repeat;
+    // background: no-repeat center center fixed;
+    display: table;
+    width: 100%;
+    height: $sz;
+    padding: 100px 0;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // margin-bottom: 30px;
+    
+    // Contenedor Tiitle
+    .text-vcenter {
+        display: table-cell;
+        text-align: left;
+        padding: 10px;
+        vertical-align: middle;
+        h2 {
+            font:{
+              family: $ff;
+              size: $fz;
+              weight: $fw;
+            }
+            text-transform: $tt; 
+            color: $ct;
+            text-shadow: 0 0 10px rgba( $black, .4);
+            padding: 0 0 0 50px;
+            small{
+              color: $csm;
+              text-shadow: 0 0 20x rgba( $black, .5);
+              font-weight: 600;
+            }
+        }
+        p {
+        	font:{
+	            family: $ffp;
+	            size: $fzp;
+	            weight: $fwp;
+        	}
+            color: $cp;
+        }
+    }
+    // Media Query
+    @media screen and (max-width: 768px){
+      // Contenedor Tiitle
+      .text-vcenter {
+          h2 {
+              font-size: 4rem;
+              color: $ct;
+          }
+          p {
+              font-size: 1.2rem;
+              font-weight: 400;
+          }
+      }    
+    }
+    @media screen and (max-width: 425px){
+        // Contenedor Tiitle
+        .text-vcenter {
+            display: none;
+        }
+    }
+}
+
+
+

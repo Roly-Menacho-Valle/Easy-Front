@@ -1,0 +1,151 @@
+// Hamburger
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 44px;
+    padding: 4px 8px;
+    background: lighten($black,20%);
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    span {
+        width: 100%;
+        height: 4px;
+        display: block;
+        background: $white;
+        margin: 6px 0;
+        transition: .5s;
+    }
+}
+// Body Menu
+.sidebar {
+    a{
+        img{
+        width: 150px;
+        }
+    }
+    position: fixed;
+    top: 0;
+    /*left:0;*/
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: $white;
+    z-index: 4;
+    transition: .5s;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    &.activa {
+        left: 0;
+    }
+    // Iten Menu
+    .menu {
+        margin: 0;
+        padding: 40px 0;
+        li {
+        list-style: none;
+        a {
+            display: block;
+            padding: 10px 0;
+            font:{
+            family: $font-1;
+            size: .9rem;
+            }
+            text-transform: uppercase;
+            color: lighten($black,40%);
+            text-decoration: none;
+            &:hover {
+            background: $secondary;
+            color: #fff;
+            }
+        }
+        }
+    }
+    // Menu Social
+    .social-icon {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        li {
+            width: 20%;
+            text-align: center;
+            list-style: none;
+            a {
+            display: block;
+            font-size: 1.1rem;
+            color: lighten($black,70%);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: .5s;
+            // background: $gray;
+            &:hover {
+                background: $secondary;
+                color:$white;
+            }
+            }
+        }
+    }
+}
+    
+.menu-icon.activa span {
+    position: absolute;
+    width: calc(100% - 16px);
+    top: calc(50% - 8px);
+    &:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    &:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    &:nth-child(2) {
+        display: none;
+    }
+}
+
+// Media Query
+@media screen and (max-width: 425px){
+    .menu-icon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 44px;
+        padding: 4px 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        z-index: 10 !important;
+        span {
+        width: 100%;
+        height: 4px;
+        display: block;
+        background: $white;
+        margin: 6px 0;
+        transition: .5s;
+        }
+    }
+
+    .sidebar {
+        /*left:0;*/
+        left: -500px;
+        width: 100%;
+        height: 100vh;
+        z-index: 4;
+        transition: .5s;
+        padding: 5px;
+        &.activa {
+        left: 0;
+        }
+    }
+}

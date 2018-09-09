@@ -1,0 +1,94 @@
+.buttons{
+    font:{
+        size: 1rem;
+        weight: 500;
+    }
+    display: inline-block;
+    outline: none;
+    border-radius: $br;
+    text-decoration: none;
+    padding: 10px 30px;
+    letter-spacing: 3px;
+    transition: .7s;
+    margin-top: 10px;
+    
+    &__default{
+        background-color:lighten($black,40%);
+        color: $white;
+        border: 3px solid lighten($black,40%);
+        &:hover{
+            border: 3px solid lighten($black,60%);
+            transition: .7s;
+        }
+    }
+    &__primary{
+        background-color:$primary;
+        color: $white;
+        border: 3px solid $primary;
+        &:hover{
+            background-color:darken($primary,10%);
+            transition: .7s;
+        }
+        &:focus, &:active{
+            background-color:darken($primary,10%);
+            border: 3px solid lighten($primary,40%);
+            transition: .7s;
+        }
+    }
+    &__success{
+        background-color:$success;
+        color: $white;
+        border: 3px solid $success;
+        &:hover{
+            background-color:darken($success,10%);
+            transition: .7s;
+        }
+        &:focus, &:active{
+            background-color:darken($success,10%);
+            border: 3px solid lighten($success,40%);
+            transition: .7s;
+        }
+    }
+    &__danger{
+        background-color:$danger;
+        color: $white;
+        border: 3px solid $danger;
+        &:hover{
+            background-color:darken($danger,10%);
+            transition: .7s;
+        }
+        &:focus, &:active{
+            background-color:darken($danger,10%);
+            border: 3px solid lighten($danger,40%);
+            transition: .7s;
+        }
+    }
+    &__warning{
+        background-color:$warning;
+        color: $black;
+        border: 3px solid $warning;
+        &:hover{
+            background-color:darken($warning,10%);
+            transition: .7s;
+        }
+        &:focus, &:active{
+            background-color:darken($warning,10%);
+            border: 3px solid lighten($warning,40%);
+            transition: .7s;
+        }
+    }
+    &__info{
+        background-color:$info;
+        color: $white;
+        border: 3px solid $info;
+        &:hover{
+            background-color: darken($info,10%);
+            transition: .7s;
+        }
+        &:focus, &:active{
+            background-color: darken($info,10%);
+            border: 3px solid lighten($info,40%);
+            transition: .7s;
+        }
+    }
+}

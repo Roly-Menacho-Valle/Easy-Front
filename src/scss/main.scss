@@ -1,0 +1,49 @@
+@import 'variables';
+@import './components/sidebar-menu';
+// @import './components/buttons';
+@import './mixins/buttons';
+
+@include buttons (map-keys($button-colors)...);
+
+body{
+	font:{
+		family: $font-1;
+		size: 16px;
+	}
+	background-color: $gray;
+
+}
+h1{
+	font:{
+		family: $font-1;
+		size: 1.8rem;
+		weight: 300;
+	}
+	text-transform: uppercase;
+	color: $gray;
+	text-align: center;
+	
+}
+
+.title{
+	font:{
+		size: 2rem;
+		weight: 300;
+	}
+	color:$dark;
+	text-align: center;
+}
+
+.color-bg-1{
+	background-color: $primary ;
+}
+
+.pt{
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 425px){
+	.title{
+		margin-top: 70px;
+	}
+}

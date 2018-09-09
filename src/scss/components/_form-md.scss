@@ -1,0 +1,64 @@
+@mixin form-md ($cb,$cb-f,$cl,$cl-f){
+    background-color: $white;
+	font-family: $font-1;
+	padding: 50px 30px;
+	border-radius: 3px;
+  .title-for {
+      color: $primary;
+      font-weight: 700;
+      margin-bottom: 60px;
+  }
+
+  .inputBox {
+      position: relative;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+
+      .input {
+          width: 100%;
+          height: 30px;
+          background: transparent;
+          border: none;
+          outline: none;
+          font-size: 1.1rem;
+          color: $primary;
+          border-bottom: 2px solid $cb;
+          transition: background .5s;
+
+          &:focus {
+              // Color del input
+              border-bottom: 2px solid $cb-f;
+              transition: background .5s;
+
+          }
+      }
+
+      .inputText {
+          position: absolute;
+          text-transform: capitalize;
+          font-weight: 500;
+          line-height: 20px;
+          font-size: 1rem;
+          opacity: .9;
+          transition: .5s;
+          // Color label
+          color: $cl;
+      }
+
+
+      textarea {
+          height: 60px !important;
+      }
+  }
+	    /*Efecto label*/
+  .focus .inputText {
+      font-family: $font-1;
+      font-weight: 700;
+      font-size: .8rem;
+      // Color Label on Click
+      color: $cl-f;
+      transform: translateY(-30px);
+      opacity: 1;
+      text-transform: capitalize;
+  }
+}

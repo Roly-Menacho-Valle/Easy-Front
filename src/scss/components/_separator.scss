@@ -1,0 +1,15 @@
+@mixin separator ($w,$h,$color,$mt,$mr,$mb,$ml){
+	
+	width: $w;
+	height: $h;
+	background-color: $color;
+	margin: $mt $mr $mb $ml;
+	border:none;
+
+	@media only screen and (max-width: 768px){
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
