@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Easy CSS
+		link(rel="stylesheet", href="css/main.min.css")
+		//- Flexbox Grid
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css")
+		script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
+	body
+		//- Menu
+		include ./components/sidebar-menu.pug
+		.container
+			.row
+				.col-lg-12-col-sm-12.col-xs-12
+					h2.title Easy CSS
+			.row
+				.col-lg-3.col-md-6.col-sm-6.col-xs-12
+					.color-bg-1
+						h1 Column 1
+				.col-lg-3.col-md-6.col-sm-6.col-xs-12
+					.color-bg-1
+						h1 Column 2
+				.col-lg-3.col-md-6.col-sm-6.col-xs-12
+					.color-bg-1
+						h1 Column 3
+				.col-lg-3.col-md-6.col-sm-6.col-xs-12
+					.color-bg-1
+						h1 Column 4
+		.container.pt
+			.row
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__default Default
+				
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__primary Primary
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__success Success
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__danger Danger
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__warning Warning
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__info Info
+
+				.col-lg-2.col-md-3.col-sm-3.col-xs-6
+					a(href="#").button.button__dark Dark
+
+
+		script(src="js/build.min.js")
