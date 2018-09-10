@@ -1,7 +1,7 @@
 @import 'variables';
+@import './components/nav';
 @import './components/sidebar-menu';
-// @import './components/buttons';
-@import './mixins/buttons';
+@import './components/buttons';
 
 @include buttons (map-keys($button-colors)...);
 
