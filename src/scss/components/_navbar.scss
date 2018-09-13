@@ -1,0 +1,49 @@
+.navbar{
+    background-color: $dark;
+    border-radius: $br;
+    display: flex;
+    justify-content:space-between;
+    // align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    
+    // Logo o Brand
+    &-brand{
+        margin-left: 30px;
+        text-decoration: none;
+        color: $gray;
+        font:{
+            size: 2rem;
+            weight: 700;	
+        }
+        letter-spacing: 2px;
+        display: flex;
+        
+        
+    }
+    // Menu e item
+    &-menu{
+        margin: 0;
+        margin-right: 30px;
+        list-style: none;
+        display: flex;
+        flex-wrap:wrap;
+        
+        &__item{
+            margin: 0;
+            display: flex;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            & a{
+                font:{
+                    weight: 500;
+                    size: 1.2rem;
+                }
+                color:$gray;
+                display: flex;
+                text-decoration: none;
+                background-color: $secondary;
+            }
+        }
+    }
+}

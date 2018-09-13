@@ -1,17 +1,19 @@
 @import 'variables';
-@import './components/nav';
 @import './components/sidebar-menu';
 @import './components/buttons';
+@import './components/navbar';
 
 @include buttons (map-keys($button-colors)...);
 
 body{
+	// box-sizing: border-box;
+	// padding: 0;
+	// margin: 0;
 	font:{
 		family: $font-1;
 		size: 16px;
 	}
 	background-color: $gray;
-
 }
 h1{
 	font:{
