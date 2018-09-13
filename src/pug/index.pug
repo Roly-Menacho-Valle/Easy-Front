@@ -8,20 +8,15 @@ html(lang="en")
 		link(href="img/favicon.png" rel="icon")
 		link(rel="stylesheet", href="css/main.min.css")
 		//- Flexbox Grid
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css")
+		
 		script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
 	body
 		//- Menu
 		//- include ./components/sidebar-menu.pug
-		//- include ./components/navbar.pug
-
-		nav.nav
-			.nav__logo
-			
-			.nav__item
-				
-
-
+		include ./components/navbar.pug
+	
 		.container
 			.row
 				.col-lg-12-col-sm-12.col-xs-12
