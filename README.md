@@ -1,5 +1,5 @@
 # Easy Front
-Es un proyecto pequeño, en face de inicio con el objetivo de
+Es un proyecto pequeño, en fase de inicio con el objetivo de
 convertirse en un _FrameWork_ simple de usar
 para el diseño de _UI_ en sitios *Web*.
 
